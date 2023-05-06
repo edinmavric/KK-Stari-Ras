@@ -25,11 +25,12 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: rgb(322, 160, 21);
+  color: rgb(255, 160, 21);
   font-size: x-large;
 }
 nav ul li a:hover {
   background-color: rgba(222, 184, 135, 0.3);
+  transition: 200ms;
 }
 nav a img {
   height: 154px;

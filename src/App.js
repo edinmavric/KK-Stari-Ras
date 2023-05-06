@@ -9,6 +9,7 @@ import History from './components/History/History';
 import News from './components/News/News';
 import NoPage from './components/NoPage/NoPage';
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="news" element={<News />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
