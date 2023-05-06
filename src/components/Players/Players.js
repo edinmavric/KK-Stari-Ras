@@ -1,7 +1,11 @@
 import './Players.css';
 
 const Players = () => {
-  return <h1>Players</h1>;
+  return (
+    <div className="Players">
+      <h1>Players</h1>
+    </div>
+  );
 };
 
 export default Players;

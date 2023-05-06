@@ -2,9 +2,9 @@ import './News.css';
 
 const News = () => {
   return (
-    <>
+    <div className="News">
       <h1>News</h1>
-    </>
+    </div>
   );
 };
 

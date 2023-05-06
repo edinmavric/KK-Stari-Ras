@@ -18,3 +18,16 @@ body {
     rgb(128, 0, 0, 0.4) 100%
   );
 }
+.Home,
+.About,
+.Contact,
+.Gallery,
+.History,
+.News,
+.Players {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+}

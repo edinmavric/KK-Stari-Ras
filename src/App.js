@@ -18,12 +18,12 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="players" element={<Players />} />
-          <Route path="contact" element={<Contact />} />
           <Route path="gallery" element={<Gallery />} />
+          <Route path="contact" element={<Contact />} />
           <Route path="about" element={<About />} />
           <Route path="history" element={<History />} />
           <Route path="news" element={<News />} />
+          <Route path="players" element={<Players />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
         <Footer />
