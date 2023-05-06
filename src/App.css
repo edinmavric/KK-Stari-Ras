@@ -1,0 +1,17 @@
+a {
+  cursor: pointer;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(128, 0, 0, 0.4) 0%,
+    rgb(255, 255, 255) 15%,
+    rgb(255, 255, 255) 85%,
+    rgb(128, 0, 0, 0.4) 100%
+  );
+}
