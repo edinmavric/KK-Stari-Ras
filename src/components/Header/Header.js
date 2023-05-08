@@ -10,7 +10,7 @@ const Header = () => {
       </a>
       <div className="navigation-links">
         <ul>
-          <li className="navigation-links__name">KK Stari Ras</li>
+          <li className="navigation-links__name"><b>KK Stari Ras</b></li>
         </ul>
         <ul className="navigation-links__navs">
           <HeaderList link="/" listContent="Pocetak" />

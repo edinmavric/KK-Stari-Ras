@@ -1,7 +1,7 @@
 .Players table {
   border-collapse: collapse;
   width: 100%;
-  margin: 24px 0;
+  margin: 84px 0;
 }
 .Players table tr th {
   padding: 10px 4px;
@@ -9,15 +9,26 @@
   font-weight: normal;
   background-color: rgb(251, 249, 249);
 }
-.Players table tr:nth-child(2) th {
-    background-color: #e4e4e4;
-}
 .Players table tr th:nth-child(1) {
-    background-color: rgb(255, 255, 223);
+  background-color: rgb(220, 220, 220);
 }
-.Players table tr:nth-child(2) th:nth-child(1) {
-    background-color: #e4e4e4;
+.Players table tr:nth-child(1) th {
+  background-color: rgb(128, 0, 32);
+  color: rgb(255, 160, 21);
 }
-.Players-table__stats {
-    border-top: 2px solid black;
+.Players table tr:nth-child(1):hover th {
+  background-color: rgb(128, 0, 32);
+  color: rgb(255, 160, 21);
+}
+.Players table tr:nth-child(1):hover th:nth-child(1) {
+  background-color: rgb(128, 0, 32);
+  color: rgb(255, 160, 21);
+}
+.Players table tr:hover th {
+  transition: 500ms;
+  background-color: rgba(128, 0, 32, 0.1);
+}
+.Players table tr:hover th:nth-child(1) {
+  transition: 500ms;
+  background-color: rgba(128, 0, 32, 0.3);
 }
