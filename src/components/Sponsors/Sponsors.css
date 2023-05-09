@@ -1,0 +1,18 @@
+.Sponsors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
+  padding: 12px;
+}
+.Sponsors a {
+  margin: 24px;
+}
+.Sponsors div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

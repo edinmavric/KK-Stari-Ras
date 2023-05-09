@@ -1,7 +1,24 @@
+.Players {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+}
 .Players table {
   border-collapse: collapse;
   width: 100%;
-  margin: 84px 0;
+  margin: 0 0 84px 0;
+}
+.Players__button-container {
+  display: flex;
+  margin: 83px 0 1px 0;
+}
+.Players__button-container  button{
+  border: none;
+  padding: 8px 14px;
+  font-size: medium;
 }
 .Players table tr th {
   padding: 10px 4px;
@@ -30,5 +47,12 @@
 }
 .Players table tr:hover th:nth-child(1) {
   transition: 500ms;
+  background-color: rgba(128, 0, 32, 0.3);
+}
+.Players .active-button {
+  background-color: rgb(128, 0, 32);
+  color: rgb(255, 160, 21);
+}
+.Players .inactive-button {
   background-color: rgba(128, 0, 32, 0.3);
 }

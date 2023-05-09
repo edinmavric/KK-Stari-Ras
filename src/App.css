@@ -23,8 +23,7 @@ body {
 .Contact,
 .Gallery,
 .History,
-.News,
-.Players {
+.News {
   display: flex;
   justify-content: center;
   align-items: center;

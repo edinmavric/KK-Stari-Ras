@@ -24,7 +24,13 @@ const properties = [
 ];
 
 const Players = () => {
+  let content;
   const [backendData, setBackendData] = useState([]);
+  const [active, setActive] = useState(true);
+
+  content = active
+    ? backendData.filter(player => player.active === true)
+    : backendData.filter(player => player.active === false);
 
   useEffect(() => {
     fetch('/api')
@@ -37,8 +43,29 @@ const Players = () => {
       });
   }, []);
 
+  const activeButtonHandler = () => {
+    setActive(true);
+  };
+  const inactiveButtonHandler = () => {
+    setActive(false);
+  };
+
   return (
     <div className="Players">
+      <div className="Players__button-container">
+        <button
+          className={active ? 'active-button' : 'inactive-button'}
+          onClick={activeButtonHandler}
+        >
+          Active Players
+        </button>
+        <button
+          className={!active ? 'active-button' : 'inactive-button'}
+          onClick={inactiveButtonHandler}
+        >
+          Inactive Players
+        </button>
+      </div>
       <table>
         <tbody>
           <tr>
@@ -46,10 +73,10 @@ const Players = () => {
               <th key={index}>{content}</th>
             ))}
           </tr>
-          {backendData.map((player, index) => (
+          {content.map((players, index) => (
             <tr key={index}>
               {properties.map((prop, index) => (
-                <th key={index}>{player[prop]}</th>
+                <th key={index}>{players[prop]}</th>
               ))}
             </tr>
           ))}

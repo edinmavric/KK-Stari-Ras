@@ -10,6 +10,7 @@ import News from './components/News/News';
 import NoPage from './components/NoPage/NoPage';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import Sponsors from './components/Sponsors/Sponsors';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="players" element={<Players />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
+        <Sponsors />
         <Footer />
       </BrowserRouter>
     </>
