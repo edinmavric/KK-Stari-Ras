@@ -36,6 +36,7 @@ const Players = () => {
     fetch('/api')
       .then(response => response.json())
       .then(data => {
+        data.sort((a, b) => a.jerseyNumber - b.jerseyNumber)
         setBackendData(data);
       })
       .catch(err => {
@@ -76,7 +77,9 @@ const Players = () => {
           {content.map((players, index) => (
             <tr key={index}>
               {properties.map((prop, index) => (
-                <th key={index}>{players[prop]}</th>
+                <th key={index}>
+                  {players[prop]}
+                </th>
               ))}
             </tr>
           ))}
