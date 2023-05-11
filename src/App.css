@@ -22,7 +22,7 @@ body {
 .About,
 .Contact,
 .Gallery,
-.History,
+.Camp,
 .News {
   display: flex;
   justify-content: center;
@@ -30,4 +30,10 @@ body {
   flex-direction: column;
   width: 70%;
   margin: 0 auto;
+}
+#Author-linkedin:hover {
+  color: rgb(0, 114, 177);
+}
+#Author-github:hover {
+  color: rgb(23, 21, 21);
 }

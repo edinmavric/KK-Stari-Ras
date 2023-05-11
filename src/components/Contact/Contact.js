@@ -24,7 +24,7 @@ const Contact = () => {
       },
       body: JSON.stringify(details),
     });
-    setStatus('Submit');
+    setStatus('Posalji');
     let result = await response.json();
     alert(result.status);
   };

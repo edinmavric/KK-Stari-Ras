@@ -5,7 +5,7 @@ import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
 import Gallery from './components/Gallery/Gallery';
 import About from './components/About/About';
-import History from './components/History/History';
+import Camp from './components/Camp/Camp';
 import News from './components/News/News';
 import NoPage from './components/NoPage/NoPage';
 import Header from './components/Header/Header';
@@ -22,7 +22,7 @@ function App() {
           <Route path="gallery" element={<Gallery />} />
           <Route path="contact" element={<Contact />} />
           <Route path="about" element={<About />} />
-          <Route path="history" element={<History />} />
+          <Route path="camp" element={<Camp />} />
           <Route path="news" element={<News />} />
           <Route path="players" element={<Players />} />
           <Route path="*" element={<NoPage />} />

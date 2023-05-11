@@ -17,7 +17,7 @@ const Header = () => {
           <HeaderList link="/gallery" listContent="Galerija" />
           <HeaderList link="/contact" listContent="Kontakt" />
           <HeaderList link="/about" listContent="O Nama" />
-          <HeaderList link="/history" listContent="Istorija" />
+          <HeaderList link="/camp" listContent="Kamp" />
           <HeaderList link="/news" listContent="Vesti" />
           <HeaderList link="/players" listContent="Igraci" />
         </ul>

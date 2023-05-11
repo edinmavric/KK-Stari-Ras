@@ -41,11 +41,16 @@
 }
 .Contact form button {
   background-color: rgb(128, 0, 32);
-  color: white;
+  color: rgb(255, 160, 21);
+  font-size: 17px;
+  font-weight: bold;
   border: none;
   padding: 10px 18px;
   border-radius: 6px;
   box-shadow: 1px 1px 3px 1px #888;
+}
+.Contact form button:hover {
+  background-color: rgb(128, 0, 32, 0.8);
 }
 .Contact__us {
   margin: 12px 0 32px 0;
@@ -71,7 +76,7 @@
   font-weight: bold;
 }
 .Contact__icons {
-  font-size: 24px;
+  font-size: 28px;
 }
 .Contact form input {
   font-size: 14px;
@@ -95,9 +100,13 @@
   margin: 2px 16px;
   color: white;
 }
+.Contact__icons-bottom a:hover {
+  color: rgb(255, 160, 21);
+  transition: 400ms;
+}
 
 @media all and (max-width: 914px) {
-    .Contact__container {
-        flex-direction: column;
-    }
+  .Contact__container {
+    flex-direction: column;
+  }
 }

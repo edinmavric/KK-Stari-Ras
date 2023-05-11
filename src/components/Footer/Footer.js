@@ -12,11 +12,21 @@ const Footer = () => {
       <p>
         Dizajn i izrada sajta -{' '}
         <a
+          id="Author-linkedin"
           target="_blank"
           rel="noreferrer"
-          href="https://github.com/edinmavric"
+          href="https://www.linkedin.com/in/edin-mavric-926116265/"
         >
-          Edin Mavric
+          Edin
+        </a>
+        <span> </span>
+        <a
+          id="Author-github"
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.github.com/edinmavric"
+        >
+          Mavric
         </a>
       </p>
       <div className="footer-icons__links">
