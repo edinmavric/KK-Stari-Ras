@@ -1,0 +1,103 @@
+.Contact__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border: 1px solid #888;
+  padding: 32px 46px;
+  margin: 84px 0;
+  background-color: rgb(128, 0, 32);
+  color: white;
+  border-radius: 12px;
+  box-shadow: 1px 1px 6px 4px #888;
+  max-width: max-content;
+}
+.Contact form {
+  border: 1px solid #888;
+  padding: 12px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 32px;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  box-shadow: 1px 1px 6px 2px #6e6e6e;
+}
+.Contact form div {
+  margin: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.Contact form label {
+  font-size: 16px;
+  padding: 8px 0;
+}
+.Contact form label span {
+  color: red;
+}
+.Contact form button {
+  background-color: rgb(128, 0, 32);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 3px 1px #888;
+}
+.Contact__us {
+  margin: 12px 0 32px 0;
+}
+.Contact__us p {
+  padding: 12px 0;
+  font-size: 32px;
+  font-weight: bolder;
+}
+.Contact__us span {
+  font-size: 16px;
+}
+.Contact__email {
+  display: flex;
+  align-items: center;
+  margin: 18px 0;
+}
+.Contact__email div {
+  margin-left: 12px;
+}
+.Contact__email div p {
+  font-size: 18px;
+  font-weight: bold;
+}
+.Contact__icons {
+  font-size: 24px;
+}
+.Contact form input {
+  font-size: 14px;
+  padding: 8px 56px 8px 8px;
+  border-radius: 4px;
+  border: 1px solid #888;
+}
+.Contact form textarea {
+  font-size: 14px;
+  padding: 10px 56px 10px 8px;
+  border-radius: 4px;
+  border: 1px solid #888;
+}
+.Contact__info {
+  margin: 12px 160px 26px 0;
+}
+.Contact__icons-bottom {
+  margin-top: 32px;
+}
+.Contact__icons-bottom a {
+  margin: 2px 16px;
+  color: white;
+}
+
+@media all and (max-width: 914px) {
+    .Contact__container {
+        flex-direction: column;
+    }
+}

@@ -17,7 +17,7 @@ const Sponsors = () => {
   return (
     <Carousel
       autoPlay={true}
-      interval={1800}
+      interval={2200}
       infiniteLoop={true}
       stopOnHover={true}
       showThumbs={false}

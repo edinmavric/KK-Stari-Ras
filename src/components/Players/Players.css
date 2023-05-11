@@ -8,26 +8,31 @@
 }
 .Players table {
   border-collapse: collapse;
+  border: 1px solid #ababab;
   width: 100%;
   margin: 0 0 84px 0;
 }
 .Players__button-container {
   display: flex;
+  border: 1px solid #888;
   margin: 83px 0 1px 0;
 }
-.Players__button-container  button{
+.Players__button-container button {
   border: none;
   padding: 8px 14px;
-  font-size: medium;
+  font-size: large;
 }
 .Players table tr th {
-  padding: 10px 4px;
-  border: 1px solid #888;
+  padding: 13px 4px;
+  border: 1px solid #ababab;
+  border-left: none;
+  border-right: none;
+  font-size: 17px;
   font-weight: normal;
   background-color: rgb(251, 249, 249);
 }
 .Players table tr th:nth-child(1) {
-  background-color: rgb(220, 220, 220);
+  background-color: rgb(240, 240, 240);
 }
 .Players table tr:nth-child(1) th {
   background-color: rgb(128, 0, 32);
@@ -47,7 +52,7 @@
 }
 .Players table tr:hover th:nth-child(1) {
   transition: 500ms;
-  background-color: rgba(128, 0, 32, 0.3);
+  background-color: rgba(128, 0, 32, 0.22);
 }
 .Players .active-button {
   background-color: rgb(128, 0, 32);
