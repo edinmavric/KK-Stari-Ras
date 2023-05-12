@@ -1,5 +1,5 @@
-import Game from './Game';
 import './Home.css';
+import Game from './Game';
 import { useState, useEffect } from 'react';
 
 const tableContent = [

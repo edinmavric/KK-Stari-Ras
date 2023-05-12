@@ -70,20 +70,22 @@ const Contact = () => {
             </div>
           </div>
           <div className="Contact__icons-bottom">
-            <a href='https://twitter.com/' target='_blank' rel='noreferrer'>
+            <a href="https://twitter.com/" target="_blank" rel="noreferrer">
               <FiTwitter className="Contact__icons" />
             </a>
-            <a href='https://youtube.com/' target='_blank' rel='noreferrer'>
+            <a href="https://youtube.com/" target="_blank" rel="noreferrer">
               <FiYoutube className="Contact__icons" />
             </a>
-            <a href='https://instagram.com/' target='_blank' rel='noreferrer'>
+            <a href="https://instagram.com/" target="_blank" rel="noreferrer">
               <FiInstagram className="Contact__icons" />
             </a>
           </div>
         </div>
         <form onSubmit={handleSubmit}>
           <div>
-            <label htmlFor="name">Ime <span>*</span></label>
+            <label htmlFor="name">
+              Ime <span>*</span>
+            </label>
             <input
               placeholder="Petar Petrovic"
               type="text"
@@ -92,7 +94,9 @@ const Contact = () => {
             />
           </div>
           <div>
-            <label htmlFor="email">Email <span>*</span></label>
+            <label htmlFor="email">
+              Email <span>*</span>
+            </label>
             <input
               placeholder="your@email.com"
               type="email"
@@ -101,7 +105,9 @@ const Contact = () => {
             />
           </div>
           <div>
-            <label htmlFor="message">Poruka <span>*</span></label>
+            <label htmlFor="message">
+              Poruka <span>*</span>
+            </label>
             <textarea
               rows="4"
               placeholder="Hocu da pocnem da treniram."
@@ -113,6 +119,35 @@ const Contact = () => {
             <button type="submit">{status}</button>
           </div>
         </form>
+      </div>
+      <div className="Contact__more-informations">
+        <div className="Contact__bank-info">
+          <h1>Tekuci racuni</h1>
+          <h4>
+            Komercijalna banka: <span>205-214841-33</span>
+          </h4>
+          <h4>
+            Kredit Agrikol banka: <span>330-21001176-98</span>
+          </h4>
+        </div>
+        <div className="Contact__first-info">
+          <h1>Predsednik kluba, Uros Petrovic</h1>
+          <h4>
+            Tel: <span>066/95-95-959</span>
+          </h4>
+        </div>
+        <div className="Contact__second-info">
+          <h1>Menadzer kluba, Veljko Petrovic</h1>
+          <h4>
+            Tel: <span>066/95-95-959</span>
+          </h4>
+        </div>
+        <div className="Contact__third-info">
+          <h1>Sportski direktor/Advokat kluba, Vladan Pantovic</h1>
+          <h4>
+            Tel: <span>063/73-76-777</span>
+          </h4>
+        </div>
       </div>
     </div>
   );

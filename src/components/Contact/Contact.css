@@ -104,6 +104,24 @@
   color: rgb(255, 160, 21);
   transition: 400ms;
 }
+.Contact__more-informations div:nth-child(1) {
+  border-top: 1px solid #888;
+}
+.Contact__more-informations div {
+  padding: 14px 20px;
+  border-bottom: 1px solid #888;
+}
+.Contact__more-informations div h1,
+.Contact__more-informations div h4 {
+  font-weight: normal;
+}
+.Contact__more-informations h4 {
+  font-size: larger;
+}
+.Contact__more-informations h4 span {
+  font-size: x-large;
+  font-weight: bold;
+}
 
 @media all and (max-width: 914px) {
   .Contact__container {
