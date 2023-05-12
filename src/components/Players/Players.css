@@ -10,7 +10,6 @@
   border-collapse: collapse;
   border: 1px solid #ababab;
   width: 100%;
-  margin: 0 0 84px 0;
 }
 .Players__button-container {
   display: flex;
@@ -20,7 +19,7 @@
 .Players__button-container button {
   border: none;
   padding: 8px 14px;
-  font-size: large;
+  font-size: larger;
 }
 .Players table tr th {
   padding: 13px 4px;

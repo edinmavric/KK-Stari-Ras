@@ -1,0 +1,69 @@
+.Home table {
+  border-collapse: collapse;
+  border: 1px solid #ababab;
+  width: 100%;
+}
+.Home table tr th {
+  padding: 13px 4px;
+  border: 1px solid #ababab;
+  border-left: none;
+  border-right: none;
+  font-size: 17px;
+  font-weight: normal;
+  background-color: rgb(251, 249, 249);
+}
+.Home table tr:nth-child(1) th {
+  background-color: rgb(128, 0, 32);
+  color: rgb(255, 160, 21);
+}
+.Home table tr:nth-child(even) th {
+  background-color: #e0e0e0;
+}
+.Home__button-container {
+  width: 100%;
+  border: 1px solid #ababab;
+  margin-bottom: 4px;
+  background-color: #e0e0e0;
+}
+.Home__button-container button {
+  border: none;
+  font-size: larger;
+  background-color: rgb(146, 0, 34);
+  padding: 13px 26px;
+}
+.Home__button-container button:hover {
+  background-color: rgb(106, 0, 34);
+}
+.Home .active-button {
+  border: 1px solid rgb(255, 160, 21);
+  color: rgb(255, 160, 21);
+}
+
+
+.Game {
+  margin-top: 84px;
+}
+.Game table {
+  border-collapse: separate;
+}
+.Game table tr th {
+  padding: 10px 80px;
+}
+.Game thead {
+  display: flex;
+  justify-content: center;
+}
+.Game thead tr {
+  font-size: 20px;
+  padding: 8px 0;
+}
+.Game table tr:nth-child(1) th {
+  background-color: rgb(251, 249, 249);
+  color: black;
+}   
+.Game__teams-gym {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    padding: 2px;
+}
