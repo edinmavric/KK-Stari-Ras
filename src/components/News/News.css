@@ -1,0 +1,30 @@
+.Instagram-feed {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Instagram-feed blockquote {
+  margin: 12px;
+}
+.Instagram-News {
+  margin-top: 84px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Instagram-News__instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.Instagram-News__instagram h2 {
+  font-size: 23px;
+}
+.icons-ig {
+  font-size: xx-large;
+  color: #bc1888;
+}

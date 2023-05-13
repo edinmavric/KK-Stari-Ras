@@ -22,7 +22,7 @@
 .Home__button-container {
   width: 100%;
   border: 1px solid #ababab;
-  margin-bottom: 4px;
+  margin: 104px 0 4px 0;
   background-color: #e0e0e0;
 }
 .Home__button-container button {
@@ -39,9 +39,9 @@
   color: rgb(255, 160, 21);
 }
 
-
 .Game {
   margin-top: 84px;
+  background-color: rgb(251, 249, 249);
 }
 .Game table {
   border-collapse: separate;
@@ -60,10 +60,10 @@
 .Game table tr:nth-child(1) th {
   background-color: rgb(251, 249, 249);
   color: black;
-}   
+}
 .Game__teams-gym {
-    display: flex;
-    justify-content: center;
-    font-size: large;
-    padding: 2px;
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  padding: 2px;
 }

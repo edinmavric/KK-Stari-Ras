@@ -1,7 +1,7 @@
 import './Home.css';
 import Game from './Game';
 import { useState, useEffect } from 'react';
-
+  
 const tableContent = [
   '#',
   'Timovi',
@@ -45,7 +45,6 @@ const Home = () => {
 
   return (
     <div className="Home">
-      <h1>Home</h1>
       <div className="Home__button-container">
         <button
           className={active ? 'active-button' : 'inactive-button'}
