@@ -33,7 +33,7 @@ const Players = () => {
     : backendData.filter(player => player.active === false);
 
   useEffect(() => {
-    fetch('/api')
+    fetch('/players')
       .then(response => response.json())
       .then(data => {
         data.sort((a, b) => a.jerseyNumber - b.jerseyNumber)

@@ -1,4 +1,8 @@
-a, button {
+::selection {
+  background: rgba(255, 226, 61, 0.5);
+}
+a,
+button {
   cursor: pointer;
 }
 p {
