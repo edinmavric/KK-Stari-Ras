@@ -42,6 +42,7 @@
 .Game {
   margin-top: 84px;
   background-color: rgb(251, 249, 249);
+  color: #121212;
 }
 .Game table {
   border-collapse: separate;

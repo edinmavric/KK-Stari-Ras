@@ -21,9 +21,9 @@
   flex-direction: column;
   margin: 32px;
   background-color: white;
-  color: black;
+  color: #121212;
   border-radius: 8px;
-  box-shadow: 1px 1px 6px 2px #6e6e6e;
+  box-shadow: 1px 1px 6px 1px #2c2c2c;
 }
 .Contact form div {
   margin: 12px;
@@ -121,6 +121,9 @@
 .Contact__more-informations h4 span {
   font-size: x-large;
   font-weight: bold;
+}
+.Contact__more-informations {
+  color: #121212;
 }
 
 @media all and (max-width: 914px) {

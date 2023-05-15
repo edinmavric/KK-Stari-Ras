@@ -17,6 +17,7 @@ footer {
 footer p {
   padding: 16px 0 0 0;
   font-size: 20px;
+  color: rgb(128, 0, 32);
 }
 footer p a {
   color: rgb(255, 103, 0);
@@ -27,7 +28,7 @@ footer p a {
 .footer-icons__links a {
   padding: 16px;
   font-size: 42px;
-  color: maroon;
+  color: rgb(128, 0, 32);
 }
 .footer-icons__links a:hover {
   transition: 200ms;
