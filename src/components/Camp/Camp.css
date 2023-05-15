@@ -1,0 +1,45 @@
+.Camp__Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Camp__Header {
+  color: rgb(128, 0, 32);
+  margin: 42px 0 0 0;
+}
+.Camp__text {
+  width: 80%;
+  font-size: 20px;
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+  color: #121212;
+}
+.Camp__text p {
+  margin: 28px 0;
+}
+.Camp__no-margin p {
+  margin: 0;
+}
+.Camp__no-margin {
+  margin: 28px 0;
+}
+.Camp__main-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 42px 0;
+  width: 100%;
+}
+.Camp__info-images {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+}
+.Camp__info-images img {
+  margin: 12px 0;
+  border: 1px solid #888;
+}
