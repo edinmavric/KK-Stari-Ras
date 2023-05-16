@@ -1,7 +1,7 @@
 .Home table {
   border-collapse: collapse;
-  border: 1px solid #ababab;
   width: 100%;
+  box-shadow: 0 0 5px 1px #888;
 }
 .Home table tr th {
   padding: 13px 4px;
@@ -21,7 +21,7 @@
 }
 .Home__button-container {
   width: 100%;
-  border: 1px solid #ababab;
+  box-shadow: 1px 1px 5px 1px #888;
   margin: 104px 0 4px 0;
   background-color: #e0e0e0;
 }

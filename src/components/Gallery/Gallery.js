@@ -36,7 +36,7 @@ const Gallery = () => {
         <button onClick={goToPreviousPage} disabled={currentPage === 1}>
           &lt;
         </button>
-        <p>Stranica: {currentPage} od 4</p>
+        <p>Stranica: <span>{currentPage}</span> od 4</p>
         <button onClick={goToNextPage} disabled={currentPage === 4}>
           &gt;
         </button>

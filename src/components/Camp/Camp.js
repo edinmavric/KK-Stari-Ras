@@ -20,7 +20,7 @@ const Camp = () => {
         <div className="Camp__text">
           <p>
             Letnji kamp "Basketball Academy" se i na leto 2023. godine održava
-            na Zlatiboru, i to tokom pocetka jula. Dečaci uzrasta od 7 do 18
+            na Zlatiboru, i to tokom sredine Avgusta. Dečaci uzrasta od 7 do 18
             godina, ali i devojčice uzrasta od 7 do 12 godina, mogu da treniraju
             i stiču košarkaško znanje od nasih trenera, a sve po precizno
             kreiranom programu rada omladinske škole KK Stari Ras.

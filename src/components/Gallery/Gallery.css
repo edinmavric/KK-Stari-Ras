@@ -1,6 +1,6 @@
 .Gallery {
   margin-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 65px;
   background: linear-gradient(
     rgb(255, 250, 250) 0%,
     rgb(128, 0, 0, 0.1) 1%,
@@ -8,6 +8,8 @@
     rgb(255, 250, 250) 90%,
     rgb(255, 250, 250) 100%
   );
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px 1px #888;
 }
 .Gallery h1 {
   color: rgb(128, 0, 32);
@@ -21,8 +23,9 @@
 .Image img {
   height: 190px;
   width: 280px;
-  padding: 6px;
-  border-radius: 10px;
+  box-shadow: 0 0 5px 1px #888;
+  margin: 6px;
+  border-radius: 4px;
   /* cursor: pointer; */
 }
 .Gallery__button-container {
@@ -32,14 +35,22 @@
   align-items: center;
   margin-bottom: 18px;
 }
+.Gallery__button-container p {
+  color: rgb(128, 0, 32);
+  font-weight: 600;
+}
+.Gallery__button-container span {
+  color: rgb(255, 120, 61);
+}
 .Gallery__button-container button {
-  padding: 8px 16px;
-  background-color: rgb(128, 0, 0, 0.5);
-  border: none;
-  border: 1px solid #888;
+  padding: 7px 14px;
+  color: #888;
+  border: 2 px solid #888;
   border-radius: 50%;
-  font-size: large;
+  font-size: larger;
+  font-weight: bolder;
 }
 .Gallery__button-container button:hover {
-  background-color: rgb(128, 0, 0, 0.3);
+  color: rgb(128, 0, 32);
+  border: 2px solid rgb(128, 0, 32);
 }

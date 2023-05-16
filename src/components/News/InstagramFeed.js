@@ -33,7 +33,7 @@ const InstagramFeed = () => {
           width: 'calc(100% - 2px)',
         }}
       >
-        <div style={{ padding: 16 }}>
+        <div className='Instagram__post' style={{ padding: 16 }}>
           {' '}
           <a
             href="https://www.instagram.com/p/Cq2XY_JNjys/?utm_source=ig_embed&utm_campaign=loading"

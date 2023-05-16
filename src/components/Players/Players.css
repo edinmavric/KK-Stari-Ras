@@ -8,13 +8,13 @@
 }
 .Players table {
   border-collapse: collapse;
-  border: 1px solid #ababab;
+  box-shadow: 1px 0 5px 1px #888;
   width: 100%;
 }
 .Players__button-container {
   display: flex;
-  border: 1px solid #888;
-  margin: 83px 0 1px 0;
+  box-shadow: 0 0 5px 1px #888;
+  margin: 83px 0 4px 0;
 }
 .Players__button-container button {
   border: none;
