@@ -1,5 +1,5 @@
 import './Camp.css';
-import mainImage from './Images/kk-stari-ras-first-img.jpg';
+import mainImage from './Images/kk-stari-ras-main-img.jpg';
 import imageOne from './Images/kk-stari-ras-second-img.jpg';
 import imageTwo from './Images/kk-stari-ras-third-img.jpg';
 import imageThree from './Images/kk-stari-ras-fourth-img.jpg';
@@ -15,7 +15,7 @@ const Camp = () => {
           <h1>LETNJI KAMP KK STARI RAS/BASKETBALL CAMP ACADEMY</h1>
         </div>
         <div className="Camp__main-image">
-          <img src={mainImage} alt="" height="900" width="66%" />
+          <img src={mainImage} alt="" height="900" width="60%" />
         </div>
         <div className="Camp__text">
           <p>
@@ -44,20 +44,20 @@ const Camp = () => {
             znamenitosti i bliže se upoznati sa lepotama ovog kraja.
           </p>
           <strong>TERMINI</strong>
-          <p>01.07.2023 - 08.07.2023</p>
+          <p>11.08.2023 - 18.08.2023</p>
           <strong>CENE I POPUSTI</strong>
           <p>
             <strong>Standardni program</strong>(8 dana/7 noćenja, pun pansion i
-            prevoz): 36.000 dinara
+            prevoz): 30.000 dinara
           </p>
           <p>
             <strong>Program individualnog rada sa Fahrudinom Djulovicem</strong>
-            (8 dana/7 noćenja, pun pansion i prevoz): 80.000 dinara
+            (8 dana/7 noćenja, pun pansion i prevoz): 60.000 dinara
           </p>
           <div className="Camp__no-margin">
             <p>Sopstveni prevoz - 1.000 dinara popusta</p>
-            <p>Cena za dva deteta iz iste porodice: 60.000 dinara</p>
-            <p>Cena za tri deteta iz iste porodice: 85.000 dinara</p>
+            <p>Cena za dva deteta iz iste porodice: 55.000 dinara</p>
+            <p>Cena za tri deteta iz iste porodice: 75.000 dinara</p>
             <p>Posebne pogodnosti za grupne prijave</p>
             <p>Plaćanje na rate do polaska</p>
           </div>
