@@ -1,10 +1,11 @@
+import React from 'react';
 import './Gallery.css';
 
 const Image = ({ galleryImageData }) => {
   return (
-    <div>
+    <div className="Image">
       {galleryImageData.map(imageData => (
-        <img key={imageData.id} src={imageData.image} alt={`${imageData.id}`} />
+        <img key={imageData.id} src={imageData.image} alt="" />
       ))}
     </div>
   );
