@@ -1,5 +1,6 @@
 import './Players.css';
 import { useEffect, useState } from 'react';
+import Modal from "./Modal";
 
 const tableContent = [
   'Dres#',
@@ -25,6 +26,8 @@ const properties = [
 
 const Players = () => {
   let content;
+  const [selectedPlayer, setSelectedPlayer] = useState(null);
+  const [modalOpen, setModalOpen] = useState(false);
   const [backendData, setBackendData] = useState([]);
   const [active, setActive] = useState(true);
 
@@ -36,13 +39,18 @@ const Players = () => {
     fetch('/players')
       .then(response => response.json())
       .then(data => {
-        data.sort((a, b) => a.jerseyNumber - b.jerseyNumber)
+        data.sort((a, b) => a.jerseyNumber - b.jerseyNumber);
         setBackendData(data);
       })
       .catch(err => {
         console.log(err);
       });
   }, []);
+
+  const handleRowClick = player => {
+    setSelectedPlayer(player);
+    setModalOpen(true);
+  };
 
   const activeButtonHandler = () => {
     setActive(true);
@@ -74,17 +82,18 @@ const Players = () => {
               <th key={index}>{content}</th>
             ))}
           </tr>
-          {content.map((players, index) => (
-            <tr key={index}>
+          {content.map((player, index) => (
+            <tr key={index} onClick={() => handleRowClick(player)}>
               {properties.map((prop, index) => (
-                <th key={index}>
-                  {players[prop]}
-                </th>
+                <th key={index}>{player[prop]}</th>
               ))}
             </tr>
           ))}
         </tbody>
       </table>
+      {modalOpen && (
+        <Modal player={selectedPlayer} closeModal={() => setModalOpen(false)} />
+      )}
     </div>
   );
 };
