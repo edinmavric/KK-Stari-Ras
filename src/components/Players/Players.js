@@ -1,6 +1,6 @@
 import './Players.css';
 import { useEffect, useState } from 'react';
-import Modal from "./Modal";
+import Modal from './Modal';
 
 const tableContent = [
   'Dres#',
@@ -59,6 +59,14 @@ const Players = () => {
     setActive(false);
   };
 
+  useEffect(() => {
+    if (modalOpen) {
+      document.body.classList.add('modal-open');
+    } else {
+      document.body.classList.remove('modal-open');
+    }
+  }, [modalOpen]);
+
   return (
     <div className="Players">
       <div className="Players__button-container">
@@ -66,13 +74,13 @@ const Players = () => {
           className={active ? 'active-button' : 'inactive-button'}
           onClick={activeButtonHandler}
         >
-          Active Players
+          Aktivni Igraci
         </button>
         <button
           className={!active ? 'active-button' : 'inactive-button'}
           onClick={inactiveButtonHandler}
         >
-          Inactive Players
+          Inaktivni Igraci
         </button>
       </div>
       <table>

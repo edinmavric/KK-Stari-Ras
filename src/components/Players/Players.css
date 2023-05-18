@@ -63,9 +63,8 @@
 .Players .inactive-button {
   background-color: rgba(160, 0, 32, 0.3);
 }
-.modal {
+.Modal {
   position: fixed;
-  overflow: hidden;
   top: 0;
   left: 0;
   width: 100%;
@@ -75,13 +74,18 @@
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 9999;
+  overflow: auto;
 }
-.modal-content {
+.Modal__Content {
   background-color: whitesmoke;
   padding: 20px;
   border-radius: 0.35rem;
   max-width: 500px;
   width: 100%;
+}
+.Modal__Content h2 {
+  display: flex;
+  justify-content: center;
 }
 .Modal__Player-information {
   display: flex;
@@ -90,5 +94,13 @@
   flex-direction: row;
 }
 .close {
+  font-size: 26px;
   cursor: pointer;
+  float: right;
+}
+.close:hover {
+  color: rgb(160, 0, 32);
+}
+.modal-open {
+  overflow: hidden;
 }
