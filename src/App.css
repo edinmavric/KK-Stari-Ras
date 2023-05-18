@@ -16,10 +16,10 @@ ul {
 body {
   background: linear-gradient(
     90deg,
-    rgb(128, 0, 0, 0.4) 0%,
-    rgb(255, 250, 250) 15%,
-    rgb(255, 250, 250) 85%,
-    rgb(128, 0, 0, 0.4) 100%
+    rgb(160, 0, 32, 0.2) 0%,
+    whitesmoke 15%,
+    whitesmoke 85%,
+    rgb(160, 0, 32, 0.2) 100%
   );
 }
 .Home,

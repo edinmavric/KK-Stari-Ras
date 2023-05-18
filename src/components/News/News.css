@@ -9,7 +9,7 @@
   margin: 42px 0;
 }
 .News__header h1 {
-  color: rgb(128, 0, 32);
+  color: rgb(160, 0, 32);
 }
 .Instagram-feed {
   display: flex;
@@ -23,6 +23,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border: 2px solid #bc1888d5;
 }
 .News__timelines {
   display: flex;
@@ -42,6 +43,21 @@
   color: rgb(66, 103, 178);
 }
 .Instagram-News,
+.Facebook-News,
+.Image-News {
+  padding: 0 20px;
+  border-radius: 0.45rem;
+  margin: 0 24px;
+}
 .Facebook-News {
-  padding: 0 40px;
+  border: 2px solid rgb(66, 103, 178);
+}
+.Image-News {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Image-News img {
+  margin: 8px 0;
 }

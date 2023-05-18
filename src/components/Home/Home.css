@@ -1,10 +1,12 @@
 .Home table {
   border-collapse: collapse;
   width: 100%;
-  box-shadow: 0 0 5px 1px #888;
+  box-shadow: 0 5px 15px 5px #ddd;
+  border-radius: 0.45rem;
+  overflow: hidden;
 }
 .Home table tr th {
-  padding: 13px 4px;
+  padding: 14px 7px;
   border: 1px solid #ababab;
   border-left: none;
   border-right: none;
@@ -13,7 +15,7 @@
   background-color: rgb(251, 249, 249);
 }
 .Home table tr:nth-child(1) th {
-  background-color: rgb(128, 0, 32);
+  background-color: rgb(160, 0, 32);
   color: rgb(255, 160, 21);
 }
 .Home table tr:nth-child(even) th {
@@ -21,18 +23,21 @@
 }
 .Home__button-container {
   width: 100%;
-  box-shadow: 1px 1px 5px 1px #888;
-  margin: 104px 0 4px 0;
+  box-shadow: 0 5px 15px 5px #ddd;
+  margin: 42px 0 4px 0;
   background-color: #e0e0e0;
+  border-radius: 0.45rem;
+  border: 1px solid #d0d0d0;
+  overflow: hidden;
 }
 .Home__button-container button {
   border: none;
   font-size: larger;
-  background-color: rgb(146, 0, 34);
+  background-color: rgb(160, 0, 32);
   padding: 13px 26px;
 }
 .Home__button-container button:hover {
-  background-color: rgb(106, 0, 34);
+  background-color: rgb(128, 0, 32);
 }
 .Home .active-button {
   border: 1px solid rgb(255, 160, 21);
@@ -40,7 +45,7 @@
 }
 
 .Game {
-  margin-top: 84px;
+  margin-top: 68px;
   background-color: rgb(251, 249, 249);
   color: #121212;
 }
@@ -48,7 +53,7 @@
   border-collapse: separate;
 }
 .Game table tr th {
-  padding: 10px 80px;
+  padding: 14px 28px;
 }
 .Game thead {
   display: flex;
@@ -56,7 +61,7 @@
 }
 .Game thead tr {
   font-size: 20px;
-  padding: 8px 0;
+  padding: 10px 0;
 }
 .Game table tr:nth-child(1) th {
   background-color: rgb(251, 249, 249);
@@ -66,5 +71,5 @@
   display: flex;
   justify-content: center;
   font-size: large;
-  padding: 2px;
+  padding: 12px 6px;
 }

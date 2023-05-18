@@ -4,25 +4,28 @@
   align-items: flex-start;
   flex-direction: column;
   width: 70%;
-  margin: 0 auto;
+  margin: 42px auto 0 auto;
 }
 .Players table {
   border-collapse: collapse;
-  box-shadow: 1px 0 5px 1px #888;
+  box-shadow: 0 5px 10px #ddd;
   width: 100%;
+  border-radius: 0.45rem;
+  overflow: hidden;
 }
 .Players__button-container {
   display: flex;
-  box-shadow: 0 0 5px 1px #888;
-  margin: 83px 0 4px 0;
+  box-shadow: 0 5px 18px #ddd;
+  border-radius: 0.35rem;
+  overflow: hidden;
 }
 .Players__button-container button {
   border: none;
-  padding: 8px 14px;
+  padding: 8px 16px;
   font-size: larger;
 }
 .Players table tr th {
-  padding: 13px 4px;
+  padding: 14px 7px;
   border: 1px solid #ababab;
   border-left: none;
   border-right: none;
@@ -34,29 +37,29 @@
   background-color: rgb(240, 240, 240);
 }
 .Players table tr:nth-child(1) th {
-  background-color: rgb(128, 0, 32);
+  background-color: rgb(160, 0, 32);
   color: rgb(255, 160, 21);
 }
 .Players table tr:nth-child(1):hover th {
-  background-color: rgb(128, 0, 32);
+  background-color: rgb(160, 0, 32);
   color: rgb(255, 160, 21);
 }
 .Players table tr:nth-child(1):hover th:nth-child(1) {
-  background-color: rgb(128, 0, 32);
+  background-color: rgb(160, 0, 32);
   color: rgb(255, 160, 21);
 }
 .Players table tr:hover th {
   transition: 500ms;
-  background-color: rgba(128, 0, 32, 0.1);
+  background-color: rgba(160, 0, 32, 0.1);
 }
 .Players table tr:hover th:nth-child(1) {
   transition: 500ms;
-  background-color: rgba(128, 0, 32, 0.22);
+  background-color: rgba(160, 0, 32, 0.22);
 }
 .Players .active-button {
-  background-color: rgb(128, 0, 32);
+  background-color: rgb(160, 0, 32);
   color: rgb(255, 160, 21);
 }
 .Players .inactive-button {
-  background-color: rgba(128, 0, 32, 0.3);
+  background-color: rgba(160, 0, 32, 0.3);
 }

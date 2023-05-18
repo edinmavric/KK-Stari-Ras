@@ -1,0 +1,21 @@
+.About {
+  margin-top: 42px;
+}
+.About h1 {
+  color: rgb(160, 0, 32);
+  font-size: 32px;
+}
+.About div {
+  margin: 42px 0 18px 18px;
+  width: 70%;
+  text-align: left;
+}
+.About div strong {
+  font-size: 26px;
+  color: rgb(160, 0, 32);
+}
+.About div p {
+  margin: 24px 0;
+  font-size: 23px;
+  color: #121212;
+}
