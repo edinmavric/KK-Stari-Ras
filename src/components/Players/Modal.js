@@ -1,23 +1,39 @@
 import './Players.css';
-import { AiOutlineClose } from "react-icons/ai";
+import { AiOutlineClose } from 'react-icons/ai';
+import { useState, useEffect } from 'react';
 
 const Modal = ({ player, closeModal }) => {
+  const [open, setOpen] = useState(false);
+  const [closing, setClosing] = useState(false);
+
+  useEffect(() => {
+    setOpen(true);
+  }, []);
+
+  const handleCloseModal = () => {
+    setClosing(true);
+    setTimeout(closeModal, 300);
+  };
+
   const backdropClickHandler = event => {
     if (event.target === event.currentTarget) {
-      closeModal();
+      handleCloseModal();
     }
   };
 
   return (
-    <div className="Modal" onClick={backdropClickHandler}>
-      <div className="Modal__Content">
-        <span className="close" onClick={closeModal}>
+    <div
+      className={`Modal ${open ? 'open' : ''} ${closing ? 'closing' : ''}`}
+      onClick={backdropClickHandler}
+    >
+      <div className={`Modal__Content ${closing ? 'closing' : ''}`}>
+        <span className="close" onClick={handleCloseModal}>
           <AiOutlineClose />
         </span>
         <h2>Detalji igraca</h2>
         <div className="Modal__Player-information">
           {player && (
-            <img src={player.playerImage} alt="" height="260" width="200" />
+            <img src={player.playerImage} alt="" height="260" width="220" />
           )}
           {player && (
             <div>

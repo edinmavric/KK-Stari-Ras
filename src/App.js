@@ -1,5 +1,7 @@
 import './App.css';
+import './PageTransition.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 import Players from './components/Players/Players';
 import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
@@ -17,16 +19,18 @@ function App() {
     <>
       <BrowserRouter>
         <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="gallery" element={<Gallery />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="about" element={<About />} />
-          <Route path="camp" element={<Camp />} />
-          <Route path="news" element={<News />} />
-          <Route path="players" element={<Players />} />
-          <Route path="*" element={<NoPage />} />
-        </Routes>
+        <AnimatePresence mode="wait">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="gallery" element={<Gallery />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="about" element={<About />} />
+            <Route path="camp" element={<Camp />} />
+            <Route path="news" element={<News />} />
+            <Route path="players" element={<Players />} />
+            <Route path="*" element={<NoPage />} />
+          </Routes>
+        </AnimatePresence>
         <Sponsors />
         <Footer />
       </BrowserRouter>

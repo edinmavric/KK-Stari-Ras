@@ -1,7 +1,8 @@
 import './Home.css';
 import Game from './Game';
 import { useState, useEffect } from 'react';
-  
+import { motion } from 'framer-motion';
+
 const tableContent = [
   '#',
   'Timovi',
@@ -44,7 +45,12 @@ const Home = () => {
   };
 
   return (
-    <div className="Home">
+    <motion.div
+      className="Home"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className="Home__button-container">
         <button
           className={active ? 'active-button' : 'inactive-button'}
@@ -120,7 +126,7 @@ const Home = () => {
         referreNo1="Pavle Pavlovic(KV)"
         referreNo2="Milan Milanovic(RA)"
       />
-    </div>
+    </motion.div>
   );
 };
 

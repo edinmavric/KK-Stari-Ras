@@ -4,10 +4,16 @@ import './News.css';
 import { AiFillInstagram, AiFillFacebook } from 'react-icons/ai';
 import bottomImage from './Images/Image-bottom-News.jpg';
 import topImage from './Images/Image-top-News.jpg';
+import { motion } from 'framer-motion';
 
 const News = () => {
   return (
-    <div className="News">
+    <motion.div
+      className="News"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className="News__header">
         <h1>Pratite najnovije vesti naseg kluba, sve na jednom mestu!</h1>
       </div>
@@ -27,11 +33,11 @@ const News = () => {
           <FacebookFeed />
         </div>
         <div className="Image-News">
-          <img src={topImage} alt="" height="480" width='380' />
-          <img src={bottomImage} alt="" height="380" width='380' />
+          <img src={topImage} alt="" height="480" width="380" />
+          <img src={bottomImage} alt="" height="380" width="380" />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

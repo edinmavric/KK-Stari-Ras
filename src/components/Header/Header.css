@@ -2,7 +2,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  max-width: 1260px;
+  max-width: 1200px;
   margin: 14px auto 0 auto;
   padding: 16px 8px;
   box-shadow: 0 5px 12px 3px #ddd;
@@ -21,11 +21,11 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: rgb(255, 183, 67);
-  font-size: 22px;
+  font-size: 23px;
+  color: #888;
 }
 nav ul li a:hover {
-  background-color: rgba(222, 184, 135, 0.3);
+  background-color: rgba(222, 184, 135, 0.1);
   transition: 200ms;
 }
 nav a img {
@@ -38,19 +38,14 @@ nav a img {
   flex-direction: column;
 }
 .navigation-links__navs {
-  background: linear-gradient(
-    90deg,
-    whitesmoke 0%,
-    rgba(160, 0, 32, 1) 20%,
-    rgba(160, 0, 32, 1) 80%,
-    whitesmoke 100%
-  );
-  padding: 0 120pt;
+  display: flex;
+  justify-content: space-around;
 }
 .navigation-links__name {
   color: rgb(160, 0, 32);
-  font-size: xx-large;
+  font-size: 36px;
 }
 .active {
-  text-decoration: underline;
+  font-weight: bold;
+  color: rgb(160, 0, 32);
 }

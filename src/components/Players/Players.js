@@ -1,6 +1,7 @@
 import './Players.css';
 import { useEffect, useState } from 'react';
 import Modal from './Modal';
+import { motion } from 'framer-motion';
 
 const tableContent = [
   'Dres#',
@@ -68,7 +69,12 @@ const Players = () => {
   }, [modalOpen]);
 
   return (
-    <div className="Players">
+    <motion.div
+      className="Players"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className="Players__button-container">
         <button
           className={active ? 'active-button' : 'inactive-button'}
@@ -102,7 +108,7 @@ const Players = () => {
       {modalOpen && (
         <Modal player={selectedPlayer} closeModal={() => setModalOpen(false)} />
       )}
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,9 +1,15 @@
 import './About.css';
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <div className="About">
-      <h1>ISTORIJA KLUBA</h1>
+    <motion.div
+      className="About"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      <h1>O NASEM KLUBU</h1>
       <div>
         <strong>CILJEVI I ZADACI KLUBA</strong>
         <p>
@@ -169,7 +175,7 @@ const About = () => {
           kontinenta! Svaka cast za ova dva momka!
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

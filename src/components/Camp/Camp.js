@@ -6,16 +6,22 @@ import imageThree from './Images/kk-stari-ras-fourth-img.jpg';
 import imageFour from './Images/kk-stari-ras-fifth-img.jpg';
 import imageFive from './Images/kk-stari-ras-sixth-img.jpg';
 import imageSix from './Images/kk-stari-ras-seventh-img.jpg';
+import { motion } from 'framer-motion';
 
 const Camp = () => {
   return (
-    <div className="Camp">
+    <motion.div
+      className="Camp"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className="Camp__Container">
         <div className="Camp__Header">
           <h1>LETNJI KAMP KK STARI RAS/BASKETBALL CAMP ACADEMY</h1>
         </div>
         <div className="Camp__main-image">
-          <img src={mainImage} alt="" height="900" width="60%" />
+          <img src={mainImage} alt="" height="10%" width="55%" />
         </div>
         <div className="Camp__text">
           <p>
@@ -67,15 +73,15 @@ const Camp = () => {
           </p>
         </div>
         <div className="Camp__info-images">
-          <img src={imageOne} alt="" width="90%" height="550" />
-          <img src={imageTwo} alt="" width="90%" height="550" />
-          <img src={imageThree} alt="" width="90%" height="550" />
-          <img src={imageFour} alt="" width="90%" height="550" />
-          <img src={imageFive} alt="" width="90%" height="550" />
-          <img src={imageSix} alt="" width="90%" height="550" />
+          <img src={imageOne} alt="" width="90%" height="30%" />
+          <img src={imageTwo} alt="" width="90%" height="30%" />
+          <img src={imageThree} alt="" width="90%" height="30%" />
+          <img src={imageFour} alt="" width="90%" height="30%" />
+          <img src={imageFive} alt="" width="90%" height="30%" />
+          <img src={imageSix} alt="" width="90%" height="30%" />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

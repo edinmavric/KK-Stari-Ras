@@ -5,6 +5,7 @@ import { AiOutlinePhone } from 'react-icons/ai';
 import { CiLocationOn } from 'react-icons/ci';
 import { BsSun } from 'react-icons/bs';
 import { FiTwitter, FiYoutube, FiInstagram } from 'react-icons/fi';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
   const [status, setStatus] = useState('Posalji');
@@ -26,15 +27,20 @@ const Contact = () => {
     });
     setStatus('Posalji');
     details = {
-      name: name.value = '',
-      email: email.value = '',
-      message: message.value = '',
+      name: (name.value = ''),
+      email: (email.value = ''),
+      message: (message.value = ''),
     };
     let result = await response.json();
     alert(result.status);
   };
   return (
-    <div className="Contact">
+    <motion.div
+      className="Contact"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className="Contact__container">
         <div className="Contact__info">
           <div className="Contact__us">
@@ -154,7 +160,7 @@ const Contact = () => {
           </h4>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

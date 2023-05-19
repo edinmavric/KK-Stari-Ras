@@ -61,3 +61,13 @@
 .Image-News img {
   margin: 8px 0;
 }
+@media all and (max-width: 768px) {
+  .News__Container {
+    flex-direction: column;
+  }
+  .Instagram-News,
+  .Facebook-News,
+  .Image-News {
+    margin: 24px 0;
+  }
+}

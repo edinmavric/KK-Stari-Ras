@@ -104,3 +104,47 @@
 .modal-open {
   overflow: hidden;
 }
+
+.Modal {
+  /* ...existing styles... */
+  opacity: 0; /* Start with opacity 0 for the fade-in animation */
+  transition: opacity 0.3s ease-in-out; /* Add a transition for the opacity property */
+}
+
+.Modal.open {
+  opacity: 1; /* Set opacity to 1 to show the modal */
+}
+
+.Modal__Content {
+  animation: slide-down 0.3s ease-in-out;
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.Modal.closing {
+  opacity: 0;
+}
+
+.Modal__Content.closing {
+  animation: slide-up 0.3s ease-in-out;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
