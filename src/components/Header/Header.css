@@ -8,6 +8,7 @@ nav {
   box-shadow: 0 5px 12px 3px #ddd;
   border-radius: 0.5rem;
   background: whitesmoke;
+  transition: transform 0.3s ease-in-out;
 }
 .navigation-links__navs {
   display: flex;
@@ -48,4 +49,11 @@ nav a img {
 .active {
   font-weight: bold;
   color: rgb(160, 0, 32);
+}
+nav.header-scrolled {
+  position: sticky;
+  transform: translateY(-120%);
+}
+nav.header-scrolled.visible {
+  transform: translateY(0%);
 }

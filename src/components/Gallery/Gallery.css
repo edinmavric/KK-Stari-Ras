@@ -16,7 +16,6 @@
 .Image {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
 }
 .Image img {
@@ -25,7 +24,7 @@
   box-shadow: 0 2px 4px 4px #ddd;
   margin: 6px;
   border-radius: 4px;
-  /* cursor: pointer; */
+  object-fit: cover;
 }
 .Gallery__button-container {
   width: 85%;

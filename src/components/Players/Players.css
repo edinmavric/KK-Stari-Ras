@@ -83,15 +83,41 @@
   max-width: 500px;
   width: 100%;
 }
-.Modal__Content h2 {
-  display: flex;
-  justify-content: center;
-}
 .Modal__Player-information {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
+}
+.Modal__Content-header {
+  position: absolute;
+}
+.Modal__Player-information img {
+  object-fit: cover;
+}
+.Modal__Content-player-info {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.Modal__Content-player-info h2 {
+  margin: 0;
+  margin-left: 12px;
+  transform: scale(2.6, 3.3);
+}
+.Modal__Content-player-info h3 {
+  display: flex;
+  flex-direction: column;
+  font-size: xx-large;
+  margin: 0;
+  margin-left: 24px;
+}
+.Modal__Content-player-info span {
+  font-weight: normal;
+  color: rgb(255, 160, 21);
+}
+.Modal__Content-header p {
+  font-size: 18px;
 }
 .close {
   font-size: 26px;
@@ -106,45 +132,38 @@
 }
 
 .Modal {
-  /* ...existing styles... */
-  opacity: 0; /* Start with opacity 0 for the fade-in animation */
-  transition: opacity 0.3s ease-in-out; /* Add a transition for the opacity property */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
-
 .Modal.open {
-  opacity: 1; /* Set opacity to 1 to show the modal */
+  opacity: 1;
 }
-
 .Modal__Content {
   animation: slide-down 0.3s ease-in-out;
 }
-
 @keyframes slide-down {
   from {
-    transform: translateY(-20px);
+    transform: translateX(-120px);
     opacity: 0;
   }
   to {
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
   }
 }
-
 .Modal.closing {
   opacity: 0;
 }
-
 .Modal__Content.closing {
   animation: slide-up 0.3s ease-in-out;
 }
-
 @keyframes slide-up {
   from {
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
   }
   to {
-    transform: translateY(-20px);
+    transform: translateX(120px);
     opacity: 0;
   }
 }

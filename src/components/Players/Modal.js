@@ -30,17 +30,21 @@ const Modal = ({ player, closeModal }) => {
         <span className="close" onClick={handleCloseModal}>
           <AiOutlineClose />
         </span>
-        <h2>Detalji igraca</h2>
+        {player && (
+          <div className="Modal__Content-header">
+            <div className="Modal__Content-player-info">
+              <h2>{player.jerseyNumber}</h2>
+              <h3>
+                <span>{player.firstName}</span>
+                {player.surName}
+              </h3>
+            </div>
+            <p>{player.position}</p>
+          </div>
+        )}
         <div className="Modal__Player-information">
           {player && (
-            <img src={player.playerImage} alt="" height="260" width="220" />
-          )}
-          {player && (
-            <div>
-              <p>Ime: {player.name}</p>
-              <p>Broj dresa: {player.jerseyNumber}</p>
-              <p>Pozicija: {player.position}</p>
-            </div>
+            <img src={player.playerImage} alt="" height="380" width="300" />
           )}
         </div>
       </div>

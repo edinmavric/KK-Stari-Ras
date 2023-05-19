@@ -1,6 +1,5 @@
 .News__Container {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: row;
   color: #121212;
@@ -14,25 +13,23 @@
 .Instagram-feed {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 .Instagram-News {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   border: 2px solid #bc1888d5;
 }
 .News__timelines {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: row;
 }
 .News__timelines h2 {
   font-size: 23px;
+  margin-left: 8px;
 }
 .icons-ig {
   font-size: xx-large;
@@ -54,7 +51,6 @@
 }
 .Image-News {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
