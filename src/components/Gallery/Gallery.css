@@ -51,3 +51,44 @@
   background-color: rgb(160, 0, 32, 0.8);
   border: 2px solid rgb(160, 0, 32);
 }
+.Gallery__button-container-responsive {
+  display: none;
+}
+
+@media all and (max-width: 768px) {
+  .Gallery__button-container {
+    width: 60%;
+    justify-content: flex-end;
+  }
+  .Gallery__button-container button {
+    margin: 0 12px;
+  }
+  .Gallery__button-container p {
+    display: none;
+  }
+  .Gallery__button-container-responsive {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+  }
+  .Gallery__button-container-responsive p {
+    color: rgb(160, 0, 32);
+    font-weight: 600;
+  }
+  .Gallery__button-container-responsive span {
+    color: rgb(255, 120, 61);
+  }
+  .Gallery__button-container-responsive button {
+    padding: 7px 14px;
+    border-radius: 50%;
+    font-size: larger;
+    font-weight: bolder;
+  }
+  .Gallery__button-container-responsive button:hover {
+    color: rgb(255, 160, 21);
+    background-color: rgb(160, 0, 32, 0.8);
+    border: 2px solid rgb(160, 0, 32);
+  }
+}

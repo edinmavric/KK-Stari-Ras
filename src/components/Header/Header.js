@@ -2,9 +2,35 @@ import './Header.css';
 import HeaderList from './HeaderList';
 import logo from './stariras.png';
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { HiMenuAlt3 } from "react-icons/hi";
+
+const options = [
+  { value: '/', label: 'Pocetak' },
+  { value: '/gallery', label: 'Galerija' },
+  { value: '/contact', label: 'Kontakt' },
+  { value: '/about', label: 'O Nama' },
+  { value: '/camp', label: 'Kamp' },
+  { value: '/news', label: 'Vesti' },
+  { value: '/players', label: 'Igraci' },
+];
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [selectedOption, setSelectedOption] = useState('/');
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const navigate = useNavigate();
+
+  const handleOptionChange = value => {
+    setSelectedOption(value);
+    setIsDropdownOpen(false);
+    navigate(value);
+  };
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(prevState => !prevState);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -60,6 +86,30 @@ const Header = () => {
           <HeaderList link="/news" listContent="Vesti" />
           <HeaderList link="/players" listContent="Igraci" />
         </ul>
+        <div className="navigation-links__navs-responsive">
+          <div
+            className={`navigation-links__navs-responsive-header ${
+              isDropdownOpen ? 'open' : ''
+            }`}
+            onClick={toggleDropdown}
+          >
+            {options.find(option => option.value === selectedOption)?.label}
+            <HiMenuAlt3 />
+          </div>
+          {isDropdownOpen && (
+            <ul className="navigation-links__navs-responsive-options">
+              {options.map(option => (
+                <li
+                  key={option.value}
+                  onClick={() => handleOptionChange(option.value)}
+                  value={option.value}
+                >
+                  {option.label}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
       </div>
     </nav>
   );

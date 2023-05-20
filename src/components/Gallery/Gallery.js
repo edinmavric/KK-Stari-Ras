@@ -50,6 +50,11 @@ const Gallery = () => {
         </button>
       </div>
       <Image galleryImageData={filteredGalleryData} />
+      <div className="Gallery__button-container-responsive">
+        <p>
+          Stranica: <span>{currentPage}</span> od 4
+        </p>
+      </div>
     </motion.div>
   );
 };

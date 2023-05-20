@@ -114,10 +114,11 @@
 }
 .Modal__Content-player-info span {
   font-weight: normal;
-  color: rgb(255, 160, 21);
+  color: rgb(160, 0, 32);
 }
 .Modal__Content-header p {
   font-size: 18px;
+  color: rgb(160, 0, 32);
 }
 .close {
   font-size: 26px;
