@@ -11,6 +11,7 @@
   box-shadow: 0 5px 12px 5px #ddd;
 }
 .Gallery h1 {
+  text-align: center;
   color: rgb(160, 0, 32);
 }
 .Image {
@@ -56,6 +57,9 @@
 }
 
 @media all and (max-width: 768px) {
+  .Gallery h1 {
+    font-size: 26px;
+  }
   .Gallery__button-container {
     width: 60%;
     justify-content: flex-end;
@@ -90,5 +94,9 @@
     color: rgb(255, 160, 21);
     background-color: rgb(160, 0, 32, 0.8);
     border: 2px solid rgb(160, 0, 32);
+  }
+  .Image img {
+    height: 150px;
+    width: 220px;
   }
 }

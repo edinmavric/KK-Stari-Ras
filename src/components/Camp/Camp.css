@@ -43,3 +43,13 @@
   margin: 12px 0;
   border: 1px solid #888;
 }
+
+@media all and (max-width: 768px) {
+  .Camp {
+    width: 100%;
+  }
+  .Camp__Header h1 {
+    text-align: center;
+    font-size: 26px;
+  }
+}

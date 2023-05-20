@@ -19,3 +19,18 @@
   font-size: 23px;
   color: #121212;
 }
+
+@media all and (max-width: 768px) {
+  .About {
+    width: 100%;
+  }
+  .About h1 {
+    font-size: 26px;
+  }
+  .About div strong {
+    font-size: 23px;
+  }
+  .About div p {
+    font-size: 20px;
+  }
+}

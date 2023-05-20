@@ -11,6 +11,7 @@ footer p {
   padding: 28px 0 0 0;
   font-size: 20px;
   color: rgb(160, 0, 32);
+  text-align: center;
 }
 footer p a {
   color: rgb(255, 160, 21);

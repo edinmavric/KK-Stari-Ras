@@ -73,3 +73,20 @@
   font-size: large;
   padding: 12px 6px;
 }
+
+@media all and (max-width: 768px) {
+  .Home table tr th {
+    padding: 8px 4px;
+    border-left: 1px solid #ddd;
+  }
+  .Game__teams-gym {
+    display: none;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .Home__button-container button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

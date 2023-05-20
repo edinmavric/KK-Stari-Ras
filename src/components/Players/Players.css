@@ -168,3 +168,24 @@
     opacity: 0;
   }
 }
+
+@media all and (max-width: 768px) {
+  .Players {
+    width: 95%;
+  }
+  .Players table tr th {
+    padding: 6px 3px;
+    font-size: 13px;
+  }
+  .Players__button-container button {
+    padding: 4px 8px;
+    font-size: 15px;
+  }
+  .Modal__Content {
+    max-width: 300px;
+    width: 100%;
+  }
+  .Modal__Content img {
+    margin-top: 84px;
+  }
+}
