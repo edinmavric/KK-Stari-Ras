@@ -37,7 +37,7 @@ const Players = () => {
     : backendData.filter(player => player.active === false);
 
   useEffect(() => {
-    fetch('/players')
+    fetch('https://kk-stari-ras-server.onrender.com/players')
       .then(response => response.json())
       .then(data => {
         data.sort((a, b) => a.jerseyNumber - b.jerseyNumber);

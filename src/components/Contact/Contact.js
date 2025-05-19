@@ -18,7 +18,7 @@ const Contact = () => {
       email: email.value,
       message: message.value,
     };
-    let response = await fetch('/contact', {
+    let response = await fetch('https://kk-stari-ras-server.onrender.com/contact', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8',

@@ -30,7 +30,7 @@ const Home = () => {
   const [active, setActive] = useState(true);
 
   useEffect(() => {
-    fetch('/home')
+    fetch('https://kk-stari-ras-server.onrender.com/home')
       .then(response => response.json())
       .then(data => {
         setBackendData(data);

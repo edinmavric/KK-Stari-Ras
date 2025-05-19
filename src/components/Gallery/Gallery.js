@@ -16,7 +16,7 @@ const Gallery = () => {
   };
 
   useEffect(() => {
-    fetch('/gallery')
+    fetch('https://kk-stari-ras-server.onrender.com/gallery')
       .then(response => response.json())
       .then(data => {
         setGalleryData(data);
